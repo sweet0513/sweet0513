@@ -1,0 +1,45 @@
+# ===== 敏感信息 / 凭据：绝不提交 =====
+# API 密钥与环境变量
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.secret
+*credentials*
+secrets.*
+config.local.*
+auth.json
+id_rsa*
+id_ed25519*
+
+# ===== 本地工具状态：不入库 =====
+# WorkBuddy/CodeBuddy 本地记忆与个人配置（skills 目录保留入库）
+.workbuddy/memory/
+.workbuddy/*.local.json
+.codebuddy/memory/
+
+# ===== 依赖与构建产物 =====
+node_modules/
+dist/
+build/
+out/
+*.log
+npm-debug.log*
+yarn-error.log*
+coverage/
+
+# ===== IDE / 编辑器 =====
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===== 操作系统 =====
+.DS_Store
+Thumbs.db
+Desktop.ini
